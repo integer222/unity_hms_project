@@ -1,0 +1,3 @@
+include ':feature-unity-hms-ads'
+include ':app'
+rootProject.name = "AndroidHms"

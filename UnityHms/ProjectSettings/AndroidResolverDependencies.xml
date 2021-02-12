@@ -1,0 +1,32 @@
+<dependencies>
+  <packages>
+    <package>com.huawei.hms:ads-lite:13.4.37.300</package>
+  </packages>
+  <files>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-banner-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-base-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-instream-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-interstitial-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-lang-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-lite-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-native-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-reward-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-splash-13.4.37.300.aar</file>
+    <file>Assets/Plugins/Android/com.huawei.hms.ads-template-13.4.37.300.aar</file>
+  </files>
+  <settings>
+    <setting name="androidAbis" value="armeabi-v7a" />
+    <setting name="bundleId" value="com.ProgsTech.UnityGameHms" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="False" />
+    <setting name="gradleTemplateEnabled" value="False" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useJetifier" value="False" />
+  </settings>
+</dependencies>
