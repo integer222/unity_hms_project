@@ -19,9 +19,9 @@ import com.huawei.hms.ads.nativead.NativeView;
 
 import ru.progstech.unity.hms.ads.R;
 import ru.progstech.unity.hms.ads.core.IAdStatusListener;
-import ru.progstech.unity.hms.ads.core.Logger;
+import ru.progstech.unity.hms.core.utils.Logger;
 import ru.progstech.unity.hms.ads.core.RenderAdListener;
-import ru.progstech.unity.hms.ads.utils.AdsExecutor;
+import ru.progstech.unity.hms.core.utils.AdsExecutor;
 
 public class NativeAdProxy implements NativeAd.NativeAdLoadedListener {
 

@@ -14,7 +14,7 @@ import com.huawei.hms.ads.banner.BannerView;
 
 import ru.progstech.unity.hms.ads.core.IAdStatusListener;
 import ru.progstech.unity.hms.ads.core.RenderAdListener;
-import ru.progstech.unity.hms.ads.utils.AdsExecutor;
+import ru.progstech.unity.hms.core.utils.AdsExecutor;
 
 public class BannerAdProxy {
 

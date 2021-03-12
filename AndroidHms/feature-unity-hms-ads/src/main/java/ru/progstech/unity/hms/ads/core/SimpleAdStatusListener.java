@@ -1,5 +1,7 @@
 package ru.progstech.unity.hms.ads.core;
 
+import ru.progstech.unity.hms.core.utils.Logger;
+
 public class SimpleAdStatusListener implements IAdStatusListener {
 
     private static final String TAG = "[SimpleAdStatusListener]";

@@ -1,3 +1,5 @@
+include ':core-unity-hms'
+include ':feature-unity-hms-remote-config'
 include ':feature-unity-hms-ads'
 include ':app'
 rootProject.name = "AndroidHms"

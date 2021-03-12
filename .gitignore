@@ -66,3 +66,6 @@ UnityHms/Logs/
 UnityHms/Temp/*
 AndroidHms/.idea/
 AndroidHms/gradle/
+UnityHms/Assets/Plugins/Android/com.huawei.*
+UnityHms/Assets/Plugins/Android/com.squareup.*
+AndroidHms/app/agconnect-services.json

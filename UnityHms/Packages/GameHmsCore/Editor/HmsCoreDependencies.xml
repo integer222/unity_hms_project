@@ -1,0 +1,9 @@
+<dependencies>
+  <androidPackages>
+    <androidPackage spec="com.huawei.agconnect:agconnect-core:1.5.0.300">
+      <repositories>
+        <repository>http://developer.huawei.com/repo/</repository>
+      </repositories>
+    </androidPackage>
+  </androidPackages>
+</dependencies>

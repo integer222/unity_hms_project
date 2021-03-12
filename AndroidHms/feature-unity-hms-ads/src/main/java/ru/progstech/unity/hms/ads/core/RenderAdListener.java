@@ -2,7 +2,7 @@ package ru.progstech.unity.hms.ads.core;
 
 import com.huawei.hms.ads.AdListener;
 
-import ru.progstech.unity.hms.ads.utils.AdsExecutor;
+import ru.progstech.unity.hms.core.utils.AdsExecutor;
 
 public class RenderAdListener extends AdListener {
 

@@ -1,5 +1,6 @@
 package ru.progstech.unity.hms
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.huawei.hms.ads.AdParam
@@ -17,6 +18,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        btn_test_remote_config.setOnClickListener {
+            startActivity(Intent(this, RemoteConfigActivity::class.java))
+        }
+        btn_test_ads.setOnClickListener {
+            startActivity(Intent(this, AdsActivity::class.java))
+        }
         Ads.init(this)
         Ads.setLogsEnabled(true)
         val proxyNative = NativeAdProxy(this, null)

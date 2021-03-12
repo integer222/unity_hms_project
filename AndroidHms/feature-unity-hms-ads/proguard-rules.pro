@@ -22,4 +22,4 @@
 
 -keep class com.huawei.openalliance.ad.** { *; }
 -keep class com.huawei.hms.ads.** { *; }
--keep class ru.progstech.hms.ads.v2.** { *; }
+-keep class ru.progstech.unity.hms.ads.** { *; }

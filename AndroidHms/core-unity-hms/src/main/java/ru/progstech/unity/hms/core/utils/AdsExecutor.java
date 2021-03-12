@@ -1,4 +1,4 @@
-package ru.progstech.unity.hms.ads.utils;
+package ru.progstech.unity.hms.core.utils;
 
 import android.os.Handler;
 import android.os.Looper;

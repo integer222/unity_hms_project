@@ -1,4 +1,4 @@
-package ru.progstech.unity.hms.ads.core;
+package ru.progstech.unity.hms.core.utils;
 
 import android.util.Log;
 
