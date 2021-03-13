@@ -11,12 +11,14 @@ import ru.progstech.unity.hms.ads.banner.UnityBannerSize
 import ru.progstech.unity.hms.ads.interstitial.InterstitialAdProxy
 import ru.progstech.unity.hms.ads.core.Ads
 import ru.progstech.unity.hms.ads.native_ad.NativeAdProxy
-
+import ru.progstech.unity.hms.oaid.OAIDCallback
+import ru.progstech.unity.hms.oaid.OAIDReader
 
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        OAIDReader.writeToLog(this)
         setContentView(R.layout.activity_main)
         btn_test_remote_config.setOnClickListener {
             startActivity(Intent(this, RemoteConfigActivity::class.java))

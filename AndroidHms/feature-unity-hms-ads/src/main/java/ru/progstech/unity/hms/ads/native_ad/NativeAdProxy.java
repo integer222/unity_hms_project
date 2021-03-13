@@ -28,7 +28,7 @@ public class NativeAdProxy implements NativeAd.NativeAdLoadedListener {
     private static final String TAG = "[NativeAdProxy]";
 
     private final Activity activity;
-    private View nativeViewContainer;
+    private ViewGroup nativeViewContainer;
     private NativeAd nativeAd;
     private final RenderAdListener renderAdListener;
 
@@ -69,11 +69,7 @@ public class NativeAdProxy implements NativeAd.NativeAdLoadedListener {
         if (nativeViewContainer == null) {
             return;
         }
-        ViewParent parent = nativeViewContainer.getParent();
-        if (parent instanceof ViewGroup) {
-            ((ViewGroup) parent).removeView(nativeViewContainer);
-        }
-        nativeViewContainer = null;
+        nativeViewContainer.removeAllViews();
     }
 
     public void loadAd(String adId) {
@@ -108,23 +104,30 @@ public class NativeAdProxy implements NativeAd.NativeAdLoadedListener {
     }
 
     private NativeView getNativeView() {
-        if (nativeViewContainer != null) {
-            return nativeViewContainer.findViewById(R.id.native_small_view);
-        }
-        nativeViewContainer = LayoutInflater.from(activity).inflate(R.layout.native_small_template, (ViewGroup) null);
-        NativeView nativeView = nativeViewContainer.findViewById(R.id.native_small_view);
+        ViewGroup nativeViewContainer = getNativeContainer();
+        NativeView nativeView = (NativeView) LayoutInflater.from(activity).inflate(R.layout.native_small_template, (ViewGroup) null);
         nativeView.setTitleView(nativeView.findViewById(R.id.ad_title));
         nativeView.setMediaView((MediaView) nativeView.findViewById(R.id.ad_media));
         nativeView.setAdSourceView(nativeView.findViewById(R.id.ad_source));
         nativeView.setCallToActionView(nativeView.findViewById(R.id.ad_call_to_action));
 
+        nativeViewContainer.removeAllViews();
+        nativeViewContainer.addView(nativeView);
+        return nativeView;
+    }
+
+    private ViewGroup getNativeContainer() {
+        if (nativeViewContainer != null) {
+            return nativeViewContainer;
+        }
+        nativeViewContainer = (ViewGroup) LayoutInflater.from(activity).inflate(R.layout.native_container, (ViewGroup) null);
         FrameLayout.LayoutParams adViewLayoutParams = new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
         );
         adViewLayoutParams.gravity = Gravity.BOTTOM;
         activity.addContentView(nativeViewContainer, adViewLayoutParams);
-        return nativeView;
+        return nativeViewContainer;
     }
 
     private void initNativeAdView(NativeAd nativeAd, NativeView nativeView) {

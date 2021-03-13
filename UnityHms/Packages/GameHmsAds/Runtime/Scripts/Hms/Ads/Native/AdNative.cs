@@ -29,7 +29,7 @@ namespace Progstech.Unity.Hms.Ads.Native
         {
             if (_adProxy == null)
             {
-                Debug.Log("[AdBanner] no init");
+                Debug.Log("[AdNative] no init");
                 return;
             }
             _adProxy.Call("loadAd", adId);
