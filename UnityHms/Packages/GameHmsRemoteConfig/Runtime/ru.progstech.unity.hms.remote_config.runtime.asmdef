@@ -2,7 +2,10 @@
     "name": "ru.progstech.unity.hms.remote_config.runtime",
     "rootNamespace": "Progstech.Unity",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

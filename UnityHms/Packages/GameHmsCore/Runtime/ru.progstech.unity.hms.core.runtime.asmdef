@@ -2,7 +2,10 @@
     "name": "ru.progstech.unity.hms.core.runtime",
     "rootNamespace": "Progstech.Unity",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
