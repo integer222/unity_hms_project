@@ -69,3 +69,4 @@ AndroidHms/gradle/
 UnityHms/Assets/Plugins/Android/com.huawei.*
 UnityHms/Assets/Plugins/Android/com.squareup.*
 AndroidHms/app/agconnect-services.json
+AndroidHms/all_builds/*

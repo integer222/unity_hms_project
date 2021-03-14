@@ -1,0 +1,1 @@
+.\gradlew clean :core-unity-hms:assembleRelease :feature-unity-hms-ads:assembleRelease :feature-unity-hms-remote-config:assembleRelease
