@@ -1,7 +1,7 @@
-﻿using Progstech.Unity.Hms.Ads.Core;
+﻿using MicroLibs.Unity.Hms.Ads.Core;
 using UnityEngine;
 
-namespace Progstech.Unity.Hms.Ads.Banner
+namespace MicroLibs.Unity.Hms.Ads.Banner
 {
     public class AdBanner
     {

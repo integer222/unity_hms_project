@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Progstech.Unity.Hms.Ads.Core;
+using MicroLibs.Unity.Hms.Ads.Core;
 using UnityEngine;
 
-namespace Progstech.Unity.Hms.Ads.Native
+namespace MicroLibs.Unity.Hms.Ads.Native
 {
     [CreateAssetMenu(fileName = "AdNativeBanner", menuName = "HMS/ADS/Native Banner Manager", order = 51)]
     public class AdNativeManagerSo : AdBaseBannerManagerSo

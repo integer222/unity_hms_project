@@ -1,7 +1,6 @@
-﻿
-using Progstech.Unity.Hms.Ads.Banner;
-using Progstech.Unity.Hms.Ads.Core;
-using Progstech.Unity.Hms.Ads.Native;
+﻿using MicroLibs.Unity.Hms.Ads.Banner;
+using MicroLibs.Unity.Hms.Ads.Core;
+using MicroLibs.Unity.Hms.Ads.Native;
 using UnityEngine;
 using UnityEngine.UI;
 

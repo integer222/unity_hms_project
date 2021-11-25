@@ -1,6 +1,6 @@
 {
-    "name": "ru.progstech.unity.hms.ads.editor",
-    "rootNamespace": "Progstech.Unity",
+    "name": "MicroLibs.Unity.Hms.Ads.Editor",
+    "rootNamespace": "MicroLibs.Unity.Hms.Ads",
     "references": [],
     "includePlatforms": [
         "Editor"

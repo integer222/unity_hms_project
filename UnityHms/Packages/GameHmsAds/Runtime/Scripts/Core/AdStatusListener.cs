@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Progstech.Unity.Hms.Ads.Core
+namespace MicroLibs.Unity.Hms.Ads.Core
 {
     public class AdStatusListener
     {

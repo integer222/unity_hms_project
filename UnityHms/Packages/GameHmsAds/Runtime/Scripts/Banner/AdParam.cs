@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Progstech.Unity.Hms.Ads.Banner
+namespace MicroLibs.Unity.Hms.Ads.Banner
 {
     public class AdParam
     {

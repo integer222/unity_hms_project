@@ -1,4 +1,4 @@
-﻿namespace Progstech.Unity.Hms.Ads.Banner
+﻿namespace MicroLibs.Unity.Hms.Ads.Banner
 {
     public static class AdBannerSize
     {

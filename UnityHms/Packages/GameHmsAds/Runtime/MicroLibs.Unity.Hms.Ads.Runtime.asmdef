@@ -1,6 +1,6 @@
 {
-    "name": "ru.progstech.unity.hms.ads.runtime",
-    "rootNamespace": "Progstech.Unity",
+    "name": "MicroLibs.Unity.Hms.Ads.Runtime",
+    "rootNamespace": "MicroLibs.Unity.Hms.Ads",
     "references": [],
     "includePlatforms": [
         "Android",

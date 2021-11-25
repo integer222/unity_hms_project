@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Progstech.Unity.Hms.Ads
+﻿namespace MicroLibs.Unity.Hms.Ads
 {
     public static class Constants
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Progstech.Unity.Hms.Ads.Core
+namespace MicroLibs.Unity.Hms.Ads.Core
 {
     
     public abstract class AdBaseBannerManagerSo : ScriptableObject, IAdSimpleManager

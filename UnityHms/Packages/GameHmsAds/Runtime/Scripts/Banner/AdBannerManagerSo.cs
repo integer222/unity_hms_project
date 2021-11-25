@@ -1,10 +1,7 @@
-﻿using System.Timers;
-using Progstech.Unity.Hms.Ads.Core;
-using Progstech.Unity.Hms.Ads.Native;
-using Progstech.Unity.Hms.Ads.Banner;
+﻿using MicroLibs.Unity.Hms.Ads.Core;
 using UnityEngine;
 
-namespace Progstech.Unity.Hms.Ads.Banner
+namespace MicroLibs.Unity.Hms.Ads.Banner
 {
     [CreateAssetMenu(fileName = "AdSimpleBanner", menuName = "HMS/ADS/Simple Banner Manager", order = 51)]
     public class AdBannerManagerSo : AdBaseBannerManagerSo
