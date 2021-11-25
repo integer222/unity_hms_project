@@ -4,26 +4,31 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.huawei.hms.ads.AdParam
-import kotlinx.android.synthetic.main.activity_main.*
 import ru.progstech.unity.hms.ads.core.IAdStatusListener
 import ru.progstech.unity.hms.ads.banner.BannerAdProxy
 import ru.progstech.unity.hms.ads.banner.UnityBannerSize
 import ru.progstech.unity.hms.ads.interstitial.InterstitialAdProxy
 import ru.progstech.unity.hms.ads.core.Ads
 import ru.progstech.unity.hms.ads.native_ad.NativeAdProxy
+import ru.progstech.unity.hms.databinding.ActivityMainBinding
 import ru.progstech.unity.hms.oaid.OAIDCallback
 import ru.progstech.unity.hms.oaid.OAIDReader
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         OAIDReader.writeToLog(this)
-        setContentView(R.layout.activity_main)
-        btn_test_remote_config.setOnClickListener {
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnTestRemoteConfig.setOnClickListener {
             startActivity(Intent(this, RemoteConfigActivity::class.java))
         }
-        btn_test_ads.setOnClickListener {
+        binding.btnTestAds.setOnClickListener {
             startActivity(Intent(this, AdsActivity::class.java))
         }
         Ads.init(this)
@@ -39,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         //proxyFull.loadAd("teste9ih9j0rc3", AdParam.Builder().build())
 
-        load_banner.setOnClickListener {
+        binding.loadBanner.setOnClickListener {
 //            if (proxyFull.isLoaded()) {
 //                proxyFull.show()
 //            }else {
@@ -49,10 +54,10 @@ class MainActivity : AppCompatActivity() {
             proxy.loadAd(AdParam.Builder().build())
         }
 
-        load_native.setOnClickListener {
+        binding.loadNative.setOnClickListener {
             proxyNative.loadAd("testb65czjivt9")
         }
-        destroy_native.setOnClickListener {
+        binding.destroyNative.setOnClickListener {
             proxyNative.destroy()
         }
     }
