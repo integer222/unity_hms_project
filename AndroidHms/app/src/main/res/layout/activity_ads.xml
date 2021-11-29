@@ -6,4 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".AdsActivity">
 
+    <include
+        android:id="@+id/banner_controls"
+        layout="@layout/ads_banner_buttons_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/native_controls"
+        layout="@layout/ads_banner_buttons_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_controls" />
+
+    <include
+        android:id="@+id/interstitial_controls"
+        layout="@layout/ads_fullscreen_buttons_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/native_controls" />
+
+
+    <include
+        android:id="@+id/rewarded_controls"
+        layout="@layout/ads_fullscreen_buttons_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interstitial_controls" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

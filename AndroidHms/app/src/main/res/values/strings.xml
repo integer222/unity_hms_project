@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">UnityHwAdLib</string>
+    <string name="btn_load">Load</string>
+    <string name="btn_show">Show</string>
+    <string name="btn_hide">Hide</string>
+    <string name="btn_destroy">Destroy</string>
+
+    <string name="txt_result">Result:</string>
+
+
+    <string name="title_banner">Banner:</string>
+    <string name="title_native">Native:</string>
+    <string name="title_interstitial">Interstitial:</string>
+    <string name="title_rewarded">Rewarded:</string>
+
 </resources>

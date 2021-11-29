@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        OAIDReader.writeToLog(this)
+        //OAIDReader.writeToLog(this)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -31,34 +31,34 @@ class MainActivity : AppCompatActivity() {
         binding.btnTestAds.setOnClickListener {
             startActivity(Intent(this, AdsActivity::class.java))
         }
-        Ads.init(this)
-        Ads.setLogsEnabled(true)
-        val proxyNative = NativeAdProxy(this, null)
-        val proxy = BannerAdProxy(this, null).apply {
-            setAdId("testw6vs28auh3")
-            //loadAd(AdParam.Builder().build())
-            setUnityAdSizeByType(UnityBannerSize.BANNER_SIZE_360_57)
-        }
-
-        val proxyFull = InterstitialAdProxy(this, null)
-
-        //proxyFull.loadAd("teste9ih9j0rc3", AdParam.Builder().build())
-
-        binding.loadBanner.setOnClickListener {
-//            if (proxyFull.isLoaded()) {
-//                proxyFull.show()
-//            }else {
-//                proxyFull.loadAd(AdParam.Builder().build())
-//            }
-
-            proxy.loadAd(AdParam.Builder().build())
-        }
-
-        binding.loadNative.setOnClickListener {
-            proxyNative.loadAd("testb65czjivt9")
-        }
-        binding.destroyNative.setOnClickListener {
-            proxyNative.destroy()
-        }
+//        Ads.init(this)
+//        Ads.setLogsEnabled(true)
+//        val proxyNative = NativeAdProxy(this, null)
+//        val proxy = BannerAdProxy(this, null).apply {
+//            setAdId("testw6vs28auh3")
+//            //loadAd(AdParam.Builder().build())
+//            setUnityAdSizeByType(UnityBannerSize.BANNER_SIZE_360_57)
+//        }
+//
+//        val proxyFull = InterstitialAdProxy(this, null)
+//
+//        //proxyFull.loadAd("teste9ih9j0rc3", AdParam.Builder().build())
+//
+//        binding.loadBanner.setOnClickListener {
+////            if (proxyFull.isLoaded()) {
+////                proxyFull.show()
+////            }else {
+////                proxyFull.loadAd(AdParam.Builder().build())
+////            }
+//
+//            proxy.loadAd(AdParam.Builder().build())
+//        }
+//
+//        binding.loadNative.setOnClickListener {
+//            proxyNative.loadAd("testb65czjivt9")
+//        }
+//        binding.destroyNative.setOnClickListener {
+//            proxyNative.destroy()
+//        }
     }
 }

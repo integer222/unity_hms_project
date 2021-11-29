@@ -7,8 +7,8 @@ buildscript {
     ext.compile_sdk_version = 30
     ext.build_tools_version = "30.0.3"
 
-    ext.version_code = 2
-    ext.version_name = "1.2"
+    ext.version_code = 3
+    ext.version_name = "2021.11.27"
 
     ext.allBuildFolder = "all_builds"
 
