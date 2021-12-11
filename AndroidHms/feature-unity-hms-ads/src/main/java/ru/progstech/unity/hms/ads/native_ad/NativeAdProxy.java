@@ -94,13 +94,14 @@ public class NativeAdProxy implements NativeAd.NativeAdLoadedListener {
 
     @Override
     public void onNativeAdLoaded(NativeAd nativeAd) {
-        Logger.d(TAG, "onNativeAdLoaded");
+        Logger.d(TAG, "onNativeAdLoaded Start");
         NativeView nativeView = getNativeView();
         if (this.nativeAd != null) {
             this.nativeAd.destroy();
         }
         this.nativeAd = nativeAd;
         initNativeAdView(this.nativeAd, nativeView);
+        Logger.d(TAG, "onNativeAdLoaded End");
     }
 
     private NativeView getNativeView() {
